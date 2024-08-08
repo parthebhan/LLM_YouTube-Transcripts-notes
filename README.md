@@ -5,6 +5,9 @@
 
 This Streamlit application enables users to transform YouTube video transcripts into detailed, summarized notes. It extracts the transcript from a YouTube video, processes it using Google's Generative AI, and provides a concise summary of the video’s content.
 
+
+[![Streamlit App](https://img.shields.io/badge/Streamlit_App_-Langchain_PDF_Reader-ff69b4.svg?style=for-the-badge&logo=Streamlit)](https://llmyoutubetranscriptstonotes-idrmcgcobzcx4gezvhaw64.streamlit.app/)
+
 ### Dependencies
 
 - **Streamlit**: For creating the interactive web application.
