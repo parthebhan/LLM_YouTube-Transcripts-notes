@@ -125,13 +125,7 @@ if youtube_link:
 
 # Add the download button to the sidebar
 st.sidebar.markdown("Enter the YouTube Video Link and Click Get Detailed Notes button.")
- # Add the credit section
-st.sidebar.markdown("<hr>", unsafe_allow_html=True)  # Adds a horizontal line with HTML
-st.sidebar.markdown("<h3 style='color: #2ca02c;font-size: 20px;'>App Created by: Parthebhan Pari</h3>", unsafe_allow_html=True)
-
 st.sidebar.title("DOWNLOAD MENU")
-
-
 
 with st.sidebar:
     if st.session_state.docx_file:
