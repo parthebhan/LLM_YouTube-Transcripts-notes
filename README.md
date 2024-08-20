@@ -39,12 +39,23 @@ This Streamlit application allows users to convert YouTube video transcripts int
      - **Display summary title**: **`st.markdown`** presents the title for the detailed notes section. `# Presents the title for the detailed notes section.`
      - **Output summary**: **`st.write`** displays the video summary. `# Displays the video summary.`
 
+## Sidebar Interface
+
+### **Download Button**
+
+- **Purpose**: Allows users to download the generated detailed notes in DOCX format.
+- **Implementation**:
+  - **Conditionally Display Download Button**: **`if docx_file`** checks if a DOCX file has been generated. `# Checks if a DOCX file has been generated.`
+  - **Display Message**: **`st.markdown`** displays a message indicating that the summary has been generated. `# Displays a message indicating that the summary has been generated.`
+  - **Provide Download Option**: **`st.download_button`** offers a button for users to download the DOCX file. `# Offers a button for users to download the DOCX file.`
+
 ## Usage
 
 1. **Enter YouTube Link**: Users input a YouTube video link in the text field. `# Users input a YouTube video link in the text field.`
 2. **Display Thumbnail**: The video’s thumbnail is shown. `# The video’s thumbnail is shown.`
 3. **Generate Notes**: Clicking "Get Detailed Notes" starts transcript extraction and summary generation. `# Clicking "Get Detailed Notes" starts transcript extraction and summary generation.`
 4. **View Summary**: The application displays the detailed notes derived from the video transcript. `# The application displays the detailed notes derived from the video transcript.`
+5. **Download Notes**: If a DOCX file is generated, users can download it via the sidebar download button. `# If a DOCX file is generated, users can download it via the sidebar download button.`
 
 ## Summary
 
