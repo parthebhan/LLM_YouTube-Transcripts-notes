@@ -126,7 +126,7 @@ st.sidebar.title("DOWNLOAD MENU")
 
 with st.sidebar:
     if docx_file:
-        st.markdown("Summary Generated")
+        st.markdown("Summary Generated Sucessfully")
         st.write(" ")
         st.info("Click the button below to download your detailed notes in DOCX format.")
         st.download_button(
@@ -137,3 +137,4 @@ with st.sidebar:
         )
     else:
         st.write("No summary available for download.")
+
