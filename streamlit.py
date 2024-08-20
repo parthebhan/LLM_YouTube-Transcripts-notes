@@ -122,10 +122,7 @@ if youtube_link:
 
 # Add the download button to the sidebar
 st.sidebar.markdown("Enter the YouTube Video Link and Click Get Detailed Notes button.")
-
 st.sidebar.title("DOWNLOAD MENU")
-
-
 
 with st.sidebar:
     if docx_file:
