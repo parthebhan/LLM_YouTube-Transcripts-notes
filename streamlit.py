@@ -89,7 +89,9 @@ def get_video_id(url):
     return video_id[0] if video_id else None
 
 # Streamlit app
-st.title("Transform YouTube 📹 Transcripts into Impactful Detailed Notes")
+st.markdown("""
+    <h1 style='font-size: 32px;'>Transform YouTube 📹 Transcripts into Impactful Detailed Notes</h1>
+    """, unsafe_allow_html=True)
 youtube_link = st.text_input("Enter YouTube Video Link:")
 
 # Initialize summary and DOCX file variables
@@ -130,7 +132,7 @@ with st.sidebar:
         st.write(" ")
         st.info("Click the button below to download your detailed notes in DOCX format.")
         st.download_button(
-            label="Download DOCX",
+            label="Download Summary and Exit",
             data=docx_file,
             file_name="summary.docx",
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
